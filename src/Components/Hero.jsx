@@ -32,10 +32,10 @@ function Hero() {
           </p>
 
           <div className="flex justify-center gap-4">
-            <button className="bg-[var(--deep-green)] hover:bg-[var(--hover-green)] text-[var(--white)] px-6 py-3 rounded-xl font-medium transition duration-300 hover:text-lime-500">
+            <button className="bg-[var(--deep-green)] hover:bg-[var(--hover-green)] text-[var(--white)] md:px-6 px-4 py-3 rounded-xl font-medium transition duration-300 hover:text-lime-500">
               Explore Greenscape
             </button>
-            <button className="border border-[var(--deep-green)] text-[var(--deep-green)] hover:bg-[var(--deep-green)] hover:text-lime-500 px-6 py-3 rounded-xl font-medium transition duration-300">
+            <button className="border border-[var(--deep-green)] text-[var(--deep-green)] hover:bg-[var(--deep-green)] hover:text-lime-500 px-2 md:px-6 py-3 rounded-xl font-medium transition duration-300">
               Learn More
             </button>
           </div>

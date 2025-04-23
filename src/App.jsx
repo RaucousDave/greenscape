@@ -4,6 +4,7 @@ import Features from "./Components/Features";
 import About from "./Components/About";
 import Products from "./Components/Products";
 import Cta from "./Components/Cta";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Products />
       <Cta />
+      <Footer />
     </div>
   );
 }
