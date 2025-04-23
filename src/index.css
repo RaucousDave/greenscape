@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --soft-green: #d8f3dc;
+  --deep-green: #2d6a4f;
+  --white: #f9f9f9;
+  --hover-green: #40916c;
+}
+
+* {
+  font-family: "Inter";
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Sora";
+}
