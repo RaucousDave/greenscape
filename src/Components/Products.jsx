@@ -48,9 +48,9 @@ function Products() {
             {plantIcons.map((plant, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-lime-100"
+                className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-lime-100 "
               >
-                {plant.icon}
+                <div className="flex justify-center">{plant.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{plant.name}</h3>
                 <p className="text-gray-600">{plant.desc}</p>
               </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
-function Navbar() {
+function Navbar({ scrollToSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -14,16 +14,47 @@ function Navbar() {
 
       <ul className="hidden md:flex [&>li>a]:mx-[10px]">
         <li>
-          <a href="#">Home</a>
+          <a
+            onClick={(e) => {
+              e.preventDefault;
+              scrollToSection("hero");
+            }}
+          >
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">Features</a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault;
+              scrollToSection("features");
+            }}
+          >
+            Features
+          </a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault;
+              scrollToSection("about");
+            }}
+          >
+            About
+          </a>
         </li>
         <li>
-          <a href="#">Products</a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault;
+              scrollToSection("products");
+            }}
+          >
+            Products
+          </a>
         </li>
       </ul>
 
@@ -45,16 +76,48 @@ function Navbar() {
       {isOpen && (
         <ul className="absolute top-15 right-0 h-[100vh] w-[200px] bg-white flex flex-col items-center gap-4 py-10 lg:hidden z-50">
           <li>
-            <a href="#">Home</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault;
+                scrollToSection("hero");
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">Features</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault;
+                scrollToSection("features");
+              }}
+            >
+              Features
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault;
+                scrollToSection("about");
+              }}
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="#">Products</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault;
+                scrollToSection("products");
+              }}
+            >
+              Products
+            </a>
           </li>
         </ul>
       )}

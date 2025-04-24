@@ -9,7 +9,7 @@ function Cta() {
           Transform your space with curated indoor plants that fit your
           lifestyle. No green thumb needed
         </p>
-        <button className="px-[30px] py-[15px] text-white bg-lime-500 hover:bg-lime-600 transition-all ease-in-out">
+        <button className="px-[30px] py-[15px] text-white bg-lime-500 hover:bg-lime-600 transition-all ease-in-out rounded-xl">
           Explore Collection
         </button>
       </section>
